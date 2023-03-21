@@ -8,16 +8,13 @@
     <script src="app.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body v-model="color">
+<body >
     <div id="app">
-        <label>Elija la <strong>correcta</strong></label>
-        <div>
-            <input type="radio" v-model="gano" v-model="perdio" v-bind:value="true" >1
-            <input type="radio" v-model="gano" v-bind:value="false" > 2
-        </div>
-        <div v-show="gano" class="info"> 
-            Se gano un chocolate🍫
-        </div>
+        <input type="text" v-model="opcion">
+        <div v-if="opcion=='wuenas'" v-html="mensaje"></div>
+        <div v-else-if="opcion=='hola'" v-html="mensaje2"></div>
+        <div v-else-if="opcion=='no se que poner'" v-html="mensaje3"></div>
+        <div v-else v-html="mensaje4" class="error"></div>
     </div>
 </body>
 </html>

@@ -9,3 +9,7 @@
 body{
     background-color:  green;
 }
+th,td{
+    border: .1em solid #000;
+    text-align: center;
+}

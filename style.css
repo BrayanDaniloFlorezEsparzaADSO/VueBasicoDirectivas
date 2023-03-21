@@ -1,7 +1,11 @@
 .info{
-    background:#09d35d;
+    background:#ff006f;
     color: #fff;
     font-family: sans-serif;
     padding: .5rem;
     border-radius: .3rem ;
+    text-align: center;
+}
+body{
+    background-color:  green;
 }

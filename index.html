@@ -8,11 +8,16 @@
     <script src="app.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body v-model="color">
     <div id="app">
-        <input type="text" v-model="mensaje">
-        <h1>{{mensaje}}</h1>
-        <strong v-text="mensaje"></strong>
+        <label>Elija la <strong>correcta</strong></label>
+        <div>
+            <input type="radio" v-model="gano" v-model="perdio" v-bind:value="true" >1
+            <input type="radio" v-model="gano" v-bind:value="false" > 2
+        </div>
+        <div v-show="gano" class="info"> 
+            Se gano un chocolate🍫
+        </div>
     </div>
 </body>
 </html>
